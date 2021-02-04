@@ -36,8 +36,15 @@ h1, h2, h3, h4, h5 {
         justify-content: center;
         a {
             font-size: 16px * 1.2;
+            &.active {
+                border-bottom: 6px solid $color-wine; 
+            }
         }
     }
+}
+
+button:focus {
+    outline: none;
 }
 
 /* galeria principal */
@@ -99,7 +106,7 @@ h1, h2, h3, h4, h5 {
 .footer {
     background-color: $color-black;
     color: $color-white;
-    padding-bottom: 1rem;
+    padding-bottom: .25rem; 
     .row {
         display: flex;
         justify-content: space-evenly;
@@ -107,12 +114,14 @@ h1, h2, h3, h4, h5 {
         > div {
             display: flex;
             flex-direction: column;
-            padding: 2rem;
+            padding-top: 1rem;
+            padding-botton: .25rem;
         }
     }
     &__mapa {
-        height: 60px;
+        height: 100px;
         align-self: center;
+        padding-bottom: .25rem;
     }
     .d-flex &__red-social {
         padding: 16px;

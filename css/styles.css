@@ -24,6 +24,14 @@ h1, h2, h3, h4, h5 {
   font-size: 19.2px;
 }
 
+.header__menu a.active {
+  border-bottom: 6px solid #754043;
+}
+
+button:focus {
+  outline: none;
+}
+
 /* galeria principal */
 #carousel-index .carousel-indicators li {
   width: 10px;
@@ -74,7 +82,7 @@ h1, h2, h3, h4, h5 {
 .footer {
   background-color: #2b2c2c;
   color: #ffffff;
-  padding-bottom: 1rem;
+  padding-bottom: .25rem;
 }
 
 .footer .row {
@@ -86,12 +94,14 @@ h1, h2, h3, h4, h5 {
 .footer .row > div {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding-top: 1rem;
+  padding-botton: .25rem;
 }
 
 .footer__mapa {
-  height: 60px;
+  height: 100px;
   align-self: center;
+  padding-bottom: .25rem;
 }
 
 .d-flex .footer__red-social {
