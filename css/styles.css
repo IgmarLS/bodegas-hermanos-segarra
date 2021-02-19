@@ -95,7 +95,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
-  padding-botton: .25rem;
+  padding-bottom: .25rem;
 }
 
 .footer__mapa {
@@ -126,31 +126,34 @@ button:focus {
 }
 
 /* our products - fichas BEM*/
+.bg-products {
+  background: #2b2c2c;
+}
+
 .ficha {
   margin: 0 auto;
-  /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 1.5rem; */
   padding: 2rem 0;
 }
 
 .tarjeta {
+  background: #ffffff;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
   border-radius: 25px;
   box-shadow: -11px 11px 4px rgba(100, 100, 100, 0.1);
 }
 
 .tarjeta__head {
   position: relative;
-  background: linear-gradient(135deg, #754043 8%, #cfacae 83%);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 25px 25px 0 0;
 }
 
 .tarjeta__img {
   height: 200px;
+  position: relative;
   left: 0;
   margin-top: -16px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   transition: transform 2s;
 }
 
@@ -160,22 +163,36 @@ button:focus {
 }
 
 .tarjeta__body {
-  padding: 1rem 1.5rem 0 1rem;
-  background: #ffffff;
+  padding: 1.5rem;
+  /* padding: 1rem 1.5rem 0 1rem; */
+  /* background: $color-white; */
   border-radius: 0 0 25px 25px;
+  /* color: $color-white; */
+  background: linear-gradient(to right top, #C1C1C1, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tarjeta__body h5 {
+  font-size: 1.2rem;
 }
 
 .tarjeta__title {
   display: block;
   font-size: 17px;
   font-weight: 500;
+  padding-bottom: 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .tarjeta__recomendado {
-  font-size: 10px;
-  font-weight: 300;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 12px;
+  letter-spacing: .7px;
+  font-weight: 500;
   color: #ffffff;
   background: #cda434;
   padding: 2px 5px;
@@ -184,32 +201,15 @@ button:focus {
   animation: bounce 1.7s infinite cubic-bezier(0.5, 0.05, 1, 0.5) alternate;
 }
 
-.tarjeta__desc p {
-  font-size: 1rem;
-  padding: 20px 20px 5px 20px;
-  margin: 10px;
-}
-
-.tarjeta__properties {
-  padding: 1rem 1.5rem;
-}
-
-.tarjeta__properties h5 {
-  font-size: 1.2rem;
-  padding: 0 21px;
-  padding-bottom: 10px;
-  text-transform: uppercase;
-}
-
 .tarjeta__price {
   background: #cda434;
   padding: 3px 12px;
   text-align: center;
   display: inline-block;
-  font-size: 1.2rem;
   font-weight: 200;
   color: #ffffff;
   border-radius: 5px;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .tarjeta__price strong {
